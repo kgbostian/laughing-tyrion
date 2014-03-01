@@ -13,4 +13,11 @@ void setPinModes(uint8_t pinIds[], pinMode mode)
     return; 
 }
 
-
+//-------------------------------------------------------
+void tick(uint8_t pin, uint16_t waitTime)
+{
+    digitalWrite(pin, HIGH);
+    delay(10);//Delay for 10 mSec
+    digitalWrite(pin, LOW);
+    return;
+}

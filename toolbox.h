@@ -12,9 +12,10 @@ enum pinOutput {LOW,HIGH};
 void setPinModes(uint8_t pinIds[], pinMode mode);
 
 /**
- *
- *@param:
- *@return: 
+ * Brings CLOCK pin high then low.
+ *@param: uint8_t pin is clocked GPIO from the Pi.
+ *        waitTime is wait in mSec
  */
+ void tick(uint8_t pin = 5, uint16_t waitTime = 10);
 
 
