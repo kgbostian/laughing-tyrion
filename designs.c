@@ -1,4 +1,5 @@
-#include "wiringPi.h"
+#include "toolbox.h"
+#include "designs.h"
 #include <stdio.h>
 
 //Turns all LED's on. Should appear to have the entire cube turned on.

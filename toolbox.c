@@ -1,6 +1,6 @@
 #include "toolbox.h"
 
-void setPinModes(uint8_t pinIds[], pinMode mode)
+void setPinModes(uint8_t pinIds[], pinMode_t mode)
 {
     uint8_t len = sizeof(pinIds)/sizeof(uint8_t);
     for(int i = 0; i < len; i++)
