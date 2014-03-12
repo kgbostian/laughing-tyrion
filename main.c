@@ -1,18 +1,22 @@
-#include "toolbox.h"
+#include <stdlib.h>
 #include "designs.h"
 
-typedef void (*displayPtr)();
+//typedef void (*displayPtr)() displayPtr_t;
 
 int main()
 {
     //first pass to 1
     int num_designs = 1;
     
-    displayPtr = &design1();
-    
-    for(int i = 0; i < num_designs; i++)
+    //void (*pt2Function)() = NULL;
+    //pt2Function = &design1;   
+
+    int i;
+    for(i = 0; i < num_designs; i++)
     {
-        (*displayPtr)();
+        //(*pt2Function)();
+        design1();
     }
+    return 0;
 }
 
